@@ -47,8 +47,12 @@ function LegalAidDashboard() {
                 <input type="text" placeholder="Client Name" />
             </label>
             <label>
-                Client Age:
-                <input type="text" placeholder="Client Age" />
+                Lawyer Name:
+                <input type="text" placeholder="Lawyer Name" />
+            </label>
+            <label>
+                Client Id:
+                <input type="text" placeholder="Client Id" />
             </label>
             <label>
                 Case Details:
