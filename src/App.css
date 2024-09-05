@@ -1,0 +1,582 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* .header {
+  background-color: #007bff;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+} */
+
+.header {
+  background-color: white;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header .logo {
+  display: flex;
+  gap: 10px;
+}
+
+.header img {
+  width: 25px;
+}
+
+.header .profile-menu span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+/* 
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  text-decoration: underline;
+} */
+
+.main-content {
+  padding: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+footer {
+  background-color: #007bff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+}
+
+/* Home Component Styles */
+.Home {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.role-card {
+  background-color: #e6f4ea;
+  border: 1px solid #d4e9da;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+}
+
+.role-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.select-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.select-button:hover {
+  background-color: #218838;
+}
+
+/* Undertrial Dashboard Styles */
+.UndertrialDashboard {
+  /* padding: 20px; */
+  width: 100vw;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.case-details,
+.nlp-results {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 400px;
+}
+
+.case-details h3,
+.nlp-results h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.case-details label,
+.nlp-results label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.case-details input,
+.nlp-results textarea {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* .case-details .options{
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown p {
+  font-size: 15px;
+}
+
+.dropdown-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-button:focus {
+  outline: none;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 150px;
+  max-width: 150px; /* Increased width for more space */
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-content label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px; /* Increased padding for better alignment */
+}
+
+.dropdown-content input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+.submit-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.dropdown-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+.submit-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.ml-prediction {
+  margin-top: 20px;
+}
+
+.ml-prediction p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ml-prediction label {
+  margin-right: 10px;
+}
+
+.recommendations {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.recommendation-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendation-left,
+.recommendation-right {
+  width: 48%;
+}
+
+.recommendation-left ul,
+.recommendation-right ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+
+.steps {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.steps h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.steps ul {
+  list-style: decimal inside;
+  padding-left: 20px;
+}
+
+
+/* WelcomePage.css */
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  text-align: center;
+  width: 100vw;
+  /* gap: 50px; */
+}
+
+.welcome-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-image img {
+  max-width: 70%;
+  height: auto;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-content .logo{
+  width: 60px;
+  /* margin-bottom: 15px; */
+}
+
+.welcome-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.enter-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.enter-button:hover {
+  background-color: #218838;
+}
+
+
+
+/* Common header, footer, and main content styles */
+/* .LegalAidDashboard .header {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+}
+
+.LegalAidDashboard .header .logo {
+  display: flex;
+  gap: 10px;
+}
+
+.LegalAidDashboard .header img {
+  height: 25px;
+}
+
+.LegalAidDashboard .header .profile-menu span {
+  margin-left: 15px;
+  cursor: pointer;
+} */
+
+.LegalAidDashboard .main-content {
+  padding: 20px 50px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  /* gap: 10px; */
+}
+
+.LegalAidDashboard .main-content .nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.LegalAidDashboard .main-content .nav li {
+  cursor: pointer;
+  color: #333;
+  /* background-color: red; */
+}
+
+.LegalAidDashboard .main-content .content{
+  margin-inline: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.LegalAidDashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.LegalAidDashboard input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 98%;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.summary-resources {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.case-summary, .resources {
+  padding: 20px;
+  background-color: #d1e7dd;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.LegalAidDashboard .footer {
+  padding: 10px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+
+
+/* JudicialAuthority */
+.JudicialAuthority {
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.case-selection {
+  margin-bottom: 20px;
+}
+
+.case-selection input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.case-selection button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.analysis-section {
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 20px; */
+}
+
+.decision-support {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* margin-bottom: 20px; */
+}
+
+.ai-analysis, .decision-support {
+  background-color: #f9f9f9;
+  padding: 20px 35px;
+  border-radius: 8px;
+  width: 45%;
+  text-align: left;
+  background-color: #D1E7DD;
+  margin-inline: 40px;
+}
+
+.ai-analysis h2, .decision-support h2 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.judge-decision button {
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.judge-decision .approve {
+  background-color: #28a745;
+  color: white;
+}
+
+.judge-decision .deny {
+  background-color: #dc3545;
+  color: white;
+}
